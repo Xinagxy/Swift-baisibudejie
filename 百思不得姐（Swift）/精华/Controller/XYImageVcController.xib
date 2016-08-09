@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYImageVcController" customModule="百思不得姐_Swift_" customModuleProvider="target">
+            <connections>
+                <outlet property="barkScroll" destination="T5H-Sj-ISA" id="hsd-Kp-Hpb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khm-5b-p6c" userLabel="buttow">
+                    <rect key="frame" x="0.0" y="392" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKN-b8-c2F">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="qTd-qz-oj8"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="返回" image="showbig-left-icon">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backBut:" destination="-1" eventType="touchUpInside" id="qHn-zD-Ja5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="right" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-Kf-geg" userLabel="分享">
+                            <rect key="frame" x="335" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Brc-vi-wid"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="mainCellShare"/>
+                            <connections>
+                                <action selector="share:" destination="-1" eventType="touchUpInside" id="WtW-bH-ZzX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc4-eQ-xiW">
+                            <rect key="frame" x="287" y="8" width="40" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="7sk-S7-Yju"/>
+                                <constraint firstAttribute="width" constant="40" id="8Q5-sI-hNC"/>
+                            </constraints>
+                            <state key="normal" title="下载">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="downBut:" destination="-1" eventType="touchUpInside" id="27i-Wt-56T"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Gc4-eQ-xiW" firstAttribute="top" secondItem="khm-5b-p6c" secondAttribute="top" constant="8" id="DFO-jQ-4VT"/>
+                        <constraint firstAttribute="bottom" secondItem="Gc4-eQ-xiW" secondAttribute="bottom" constant="6" id="JU9-8K-o2T"/>
+                        <constraint firstItem="sKN-b8-c2F" firstAttribute="leading" secondItem="khm-5b-p6c" secondAttribute="leading" id="Ox0-ub-ABf"/>
+                        <constraint firstItem="aQ1-Kf-geg" firstAttribute="top" secondItem="khm-5b-p6c" secondAttribute="top" id="Pz5-tT-gDs"/>
+                        <constraint firstAttribute="bottom" secondItem="aQ1-Kf-geg" secondAttribute="bottom" id="WFe-ha-xbz"/>
+                        <constraint firstItem="aQ1-Kf-geg" firstAttribute="leading" secondItem="Gc4-eQ-xiW" secondAttribute="trailing" constant="8" id="bKw-cL-Hm7"/>
+                        <constraint firstAttribute="trailing" secondItem="aQ1-Kf-geg" secondAttribute="trailing" id="fxC-dn-TtF"/>
+                        <constraint firstAttribute="height" constant="40" id="ur3-ZX-fWG"/>
+                        <constraint firstItem="sKN-b8-c2F" firstAttribute="top" secondItem="khm-5b-p6c" secondAttribute="top" id="vuH-uu-sHR"/>
+                        <constraint firstAttribute="bottom" secondItem="sKN-b8-c2F" secondAttribute="bottom" constant="5" id="yag-sp-PmM"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5H-Sj-ISA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="392"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T5H-Sj-ISA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="313-KI-eBs"/>
+                <constraint firstItem="khm-5b-p6c" firstAttribute="top" secondItem="T5H-Sj-ISA" secondAttribute="bottom" id="KYK-GB-y5s"/>
+                <constraint firstItem="khm-5b-p6c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P4F-yr-8qa"/>
+                <constraint firstAttribute="trailing" secondItem="T5H-Sj-ISA" secondAttribute="trailing" id="VaO-hD-oDL"/>
+                <constraint firstAttribute="trailing" secondItem="khm-5b-p6c" secondAttribute="trailing" id="nOh-nz-5AB"/>
+                <constraint firstItem="T5H-Sj-ISA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r1G-ig-W92"/>
+                <constraint firstAttribute="bottom" secondItem="khm-5b-p6c" secondAttribute="bottom" id="xXL-UH-KZw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-166.5" y="-232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainCellShare" width="20" height="20"/>
+        <image name="showbig-left-icon" width="11" height="18"/>
+    </resources>
+</document>

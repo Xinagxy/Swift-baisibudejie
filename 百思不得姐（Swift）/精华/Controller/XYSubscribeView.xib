@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYSubscribeView" customModule="百思不得姐_Swift_" customModuleProvider="target">
+            <connections>
+                <outlet property="covnBut" destination="4hL-aB-cRm" id="3yw-kj-lmM"/>
+                <outlet property="search" destination="D4g-K3-lw8" id="sN5-Ai-vJt"/>
+                <outlet property="tableView" destination="kQ2-HD-Msj" id="cl5-su-gt7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" misplaced="YES" placeholder="搜索" backgroundImage="bg_login_textfield" translatesAutoresizingMaskIntoConstraints="NO" id="D4g-K3-lw8">
+                    <rect key="frame" x="10" y="5" width="300" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="p42-gI-SRW"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="c0n-Ag-T1s"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kQ2-HD-Msj">
+                    <rect key="frame" x="10" y="53" width="300" height="515"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Z7z-SU-T0a"/>
+                        <outlet property="delegate" destination="-1" id="aEm-iK-W9h"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hL-aB-cRm">
+                    <rect key="frame" x="10" y="53" width="300" height="515"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="covBut:" destination="-1" eventType="touchUpInside" id="Lbp-f6-GpI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.88196417297979801" green="0.88196417297979801" blue="0.88196417297979801" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4hL-aB-cRm" firstAttribute="leading" secondItem="kQ2-HD-Msj" secondAttribute="leading" id="2aG-5o-Ike"/>
+                <constraint firstItem="4hL-aB-cRm" firstAttribute="bottom" secondItem="kQ2-HD-Msj" secondAttribute="bottom" id="5bK-xU-F1R"/>
+                <constraint firstItem="4hL-aB-cRm" firstAttribute="top" secondItem="kQ2-HD-Msj" secondAttribute="top" id="BBl-gV-Bn6"/>
+                <constraint firstItem="kQ2-HD-Msj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Eia-aR-g8H"/>
+                <constraint firstAttribute="bottom" secondItem="kQ2-HD-Msj" secondAttribute="bottom" id="GUb-y5-Kaq"/>
+                <constraint firstItem="D4g-K3-lw8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="JEf-uO-Icv"/>
+                <constraint firstAttribute="trailing" secondItem="kQ2-HD-Msj" secondAttribute="trailing" constant="10" id="JwV-lC-PA8"/>
+                <constraint firstAttribute="trailing" secondItem="D4g-K3-lw8" secondAttribute="trailing" constant="10" id="L2q-U9-ulL"/>
+                <constraint firstItem="D4g-K3-lw8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="Tfa-ir-5we"/>
+                <constraint firstItem="4hL-aB-cRm" firstAttribute="height" secondItem="kQ2-HD-Msj" secondAttribute="height" id="Ung-6z-v9q"/>
+                <constraint firstItem="4hL-aB-cRm" firstAttribute="trailing" secondItem="kQ2-HD-Msj" secondAttribute="trailing" id="Y7m-d6-REN"/>
+                <constraint firstItem="4hL-aB-cRm" firstAttribute="width" secondItem="kQ2-HD-Msj" secondAttribute="width" id="lKs-iA-8gw"/>
+                <constraint firstItem="kQ2-HD-Msj" firstAttribute="top" secondItem="D4g-K3-lw8" secondAttribute="bottom" constant="8" id="xj9-Iq-TEK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="212" y="315"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_login_textfield" width="9" height="11"/>
+    </resources>
+</document>

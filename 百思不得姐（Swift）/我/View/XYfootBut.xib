@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XYfootBut" customModule="百思不得姐_Swift_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine-icon-more" translatesAutoresizingMaskIntoConstraints="NO" id="fBp-NC-UUc">
+                    <rect key="frame" x="10" y="10" width="100" height="83"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lW-cf-KXX">
+                    <rect key="frame" x="0.0" y="93" width="120" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Lrq-MI-94P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3lW-cf-KXX" firstAttribute="top" secondItem="fBp-NC-UUc" secondAttribute="bottom" id="1e8-Q4-tQ2"/>
+                <constraint firstAttribute="trailing" secondItem="fBp-NC-UUc" secondAttribute="trailing" constant="10" id="Agr-Pf-uUk"/>
+                <constraint firstAttribute="trailing" secondItem="3lW-cf-KXX" secondAttribute="trailing" id="Dmk-Qt-ogh"/>
+                <constraint firstAttribute="bottom" secondItem="3lW-cf-KXX" secondAttribute="bottom" id="adw-fa-Fwc"/>
+                <constraint firstItem="3lW-cf-KXX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="b2N-hg-p6W"/>
+                <constraint firstItem="fBp-NC-UUc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="h3G-uG-PYM"/>
+                <constraint firstItem="fBp-NC-UUc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="yTv-9U-nV8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageBut" destination="fBp-NC-UUc" id="9pd-ab-VX3"/>
+                <outlet property="title" destination="3lW-cf-KXX" id="nCt-AY-rTg"/>
+            </connections>
+            <point key="canvasLocation" x="126" y="187"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine-icon-more" width="44" height="44"/>
+    </resources>
+</document>

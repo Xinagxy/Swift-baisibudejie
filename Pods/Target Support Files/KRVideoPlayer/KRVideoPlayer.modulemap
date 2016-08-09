@@ -1,0 +1,6 @@
+framework module KRVideoPlayer {
+  umbrella header "KRVideoPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
